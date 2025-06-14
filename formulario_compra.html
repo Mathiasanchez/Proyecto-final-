@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra - Portal de Mobiliario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+
+        <div class="formulario-compra">
+            <h2>Formulario de Compra</h2>
+            <form id="formularioCompra">
+                <h3>Información de envío:</h3>
+                <div class="grupo-entrada">
+                    <label for="nombreCompleto">Apellido y nombre:</label>
+                    <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+                </div>
+                <div class="grupo-entrada">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="grupo-entrada">
+                    <label for="calle">Calle:</label>
+                    <input type="text" id="calle" name="calle" required>
+                </div>
+                <div class="grupo-entrada">
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" name="numero" required>
+                </div>
+                <div class="grupo-entrada">
+                    <label for="localidad">Localidad:</label>
+                    <input type="text" id="localidad" name="localidad" required>
+                </div>
+                <div class="grupo-entrada">
+                    <label for="codigoPostal">CP:</label>
+                    <input type="text" id="codigoPostal" name="codigoPostal" required>
+                </div>
+                <div class="grupo-entrada">
+                    <label for="seleccionProducto">Producto:</label>
+                    <select id="seleccionProducto" name="producto" required>
+                        <option value="">Seleccione un producto</option>
+                        <option value="Silla Moderna">Silla</option>
+                        <option value="Mesa de Centro">Mesa</option>
+                        <option value="Sofá Confortable">Sofá</option>
+                        <option value="Estantería Minimalista">Estantería</option>
+                        <option value="Cama Doble">Cama</option>
+                        <option value="Armario Ropero">Armario</option>
+                    </select>
+                </div>
+                <div class="grupo-entrada">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="formulario_compra.js"></script>
+</body>
+</html>
